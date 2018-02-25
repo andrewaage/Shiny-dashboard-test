@@ -2,8 +2,8 @@
 # Last pakker
 library(shiny)
 library(shinydashboard)
+library(tidyverse)
 library(broom)
-library(ggplot2)
 
 # Minimum eksempel --------------------------------------------------------
 

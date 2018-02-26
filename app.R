@@ -1,6 +1,12 @@
 
 # Tester endring av scriptet til Andrè 
 
+# Installerer pakker
+install.packages('shiny')
+install.packages('shinydashboard')
+install.packages('tidyverse')
+install.packages('broom')
+
 
 # Last pakker
 library(shiny)
@@ -369,7 +375,7 @@ server <- function(input, output) {
     ggplot(Perf_time, aes(x = time, y = R2)) +
       geom_line(color = "cornflowerblue") +
       ylim(0.5, 1) +
-      ggtitle("Utvikling i forklaringsgrad over tid")
+      ggtitle("Utvikling over tid")
   })
   
 }

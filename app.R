@@ -1,21 +1,20 @@
 
-# Tester endring av scriptet til Andrè 
+# Endrer på shiny-app -----------------------------------------------------
+  # Last pakker
+  library(shiny)
+  library(shinydashboard)
+  library(tidyverse)
+  library(broom)
+  library(shinythemes)
 
-
-# Last pakker
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-library(broom)
 
 # Minimum eksempel --------------------------------------------------------
 
 # Definer UI for et dashboard
-ui <- dashboardPage(
-  dashboardHeader(),
-  dashboardSidebar(),
-  dashboardBody()
-)
+ui <- dashboardPage(skin = "green",
+                    dashboardHeader(),
+                    dashboardSidebar(),
+                    dashboardBody())
 
 # Definer server (tom her)
 server <- function(input, output) {

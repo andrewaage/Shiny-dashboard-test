@@ -1,4 +1,7 @@
 
+# Tester endring av scriptet til Andrè 
+
+
 # Last pakker
 library(shiny)
 library(shinydashboard)
